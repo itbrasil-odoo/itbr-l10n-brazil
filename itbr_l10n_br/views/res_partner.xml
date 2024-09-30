@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<odoo>
+  <record id="br_partner_tax_fields_form" model="ir.ui.view">
+    <field name="name">res.partner.form (itbr_l10n_br)</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="l10n_br.br_partner_tax_fields_form" />
+    <field name="arch" type="xml">
+      <field name="l10n_br_ie_code" position="attributes">
+        <attribute
+                    name="invisible"
+                >company_type == 'person' and (country_id and country_id.code != 'BR') or not country_id</attribute>
+      </field>
+      <field name="l10n_br_im_code" position="attributes">
+        <attribute
+                    name="invisible"
+                >company_type == 'person' and (country_id and country_id.code != 'BR') or not country_id</attribute>
+      </field>
+      <field name="l10n_br_isuf_code" position="attributes">
+        <attribute
+                    name="invisible"
+                >company_type == 'person' and (country_id and country_id.code != 'BR') or not country_id</attribute>
+      </field>
+    </field>
+  </record>
+</odoo>

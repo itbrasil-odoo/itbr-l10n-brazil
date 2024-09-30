@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<odoo>
+  <record id="l10n_br.partner_demo_company_br" model="res.partner">
+    <field name="company_type">company</field>
+  </record>
+</odoo>
