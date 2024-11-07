@@ -17,7 +17,12 @@ Improvements to Odoo's Brazilian localization by IT Brasil
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[itbr_brazil_api](itbr_brazil_api/) | 17.0.1.0.0 | [![renanteixeira](https://github.com/renanteixeira.png?size=30px)](https://github.com/renanteixeira) | This module integrates with the Brasil API portal
+[itbr_l10n_br](itbr_l10n_br/) | 17.0.1.0.0 | [![renanteixeira](https://github.com/renanteixeira.png?size=30px)](https://github.com/renanteixeira) | Customization of base module for implementations in Brazil.
 
 [//]: # (end addons)
 
