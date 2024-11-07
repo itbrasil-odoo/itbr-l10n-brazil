@@ -13,6 +13,7 @@
     "development_status": "Alpha",
     "data": [
         "views/res_bank.xml",
+        "views/res_partner.xml",
         "views/ir_actions.xml",
         "views/ir_ui_menu.xml",
     ],

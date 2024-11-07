@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<odoo>
+  <record id="view_partner_form" model="ir.ui.view">
+    <field name="name">res.partner.form.brazil.api</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.view_partner_form" />
+    <field name="arch" type="xml">
+      <!-- Main address -->
+      <xpath expr="//field[@name='street2']" position="attributes">
+        <attribute name="placeholder">Number/Complement</attribute>
+      </xpath>
+      <xpath expr="//field[@name='street2']" position="after">
+        <field name="district" placeholder="District/Neighborhood" />
+      </xpath>
+      <xpath expr="//field[hasclass('o_address_zip')]" position="attributes">
+        <attribute name="class">o_address_zip w-50</attribute>
+      </xpath>
+      <xpath expr="//field[hasclass('o_address_zip')]" position="after">
+        <button
+                    name="get_brazil_api_zip"
+                    type="object"
+                    invisible="country_id != %(base.br)d"
+                    class="btn-sm btn-link fa fa-search oe_edit_only"
+                    aria-label="Search ZIP"
+                    title="Search ZIP"
+                />
+      </xpath>
+
+      <!-- Children -->
+      <xpath
+                expr="//div[@name='div_address']/field[@name='street2']"
+                position="attributes"
+            >
+        <attribute name="placeholder">Number/Complement</attribute>
+      </xpath>
+      <xpath expr="//div[@name='div_address']/field[@name='street2']" position="after">
+        <field name="district" placeholder="District/Neighborhood" />
+      </xpath>
+      <xpath expr="//div[@name='div_address']/field[@name='zip']" position="attributes">
+        <attribute name="class">o_address_zip w-50</attribute>
+      </xpath>
+      <xpath expr="//div[@name='div_address']/field[@name='zip']" position="after">
+        <button
+                    name="get_brazil_api_zip"
+                    type="object"
+                    invisible="country_id != %(base.br)d"
+                    class="btn-sm btn-link fa fa-search oe_edit_only"
+                    aria-label="Search ZIP"
+                    title="Search ZIP"
+                />
+      </xpath>
+    </field>
+  </record>
+</odoo>
