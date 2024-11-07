@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<odoo>
+  <menuitem
+        name="Get Brazil Banks"
+        id="menu_contacts_get_brazil_banks"
+        parent="contacts.menu_config_bank_accounts"
+        action="action_get_brazil_banks"
+        sequence="3"
+    />
+</odoo>
