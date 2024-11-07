@@ -14,6 +14,7 @@
     "data": [
         "views/res_bank.xml",
         "views/res_partner.xml",
+        "views/res_company.xml",
         "views/ir_actions.xml",
         "views/ir_ui_menu.xml",
     ],
